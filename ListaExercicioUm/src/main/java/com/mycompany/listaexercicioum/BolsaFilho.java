@@ -20,16 +20,19 @@ public class BolsaFilho {
         System.out.println("Informe quantos filhos de 17 a 18 anos você possui.");
         Integer numFilhosDezesseteDezoito = scan.nextInt();
         
+        Integer totalFilho =  numFilhosZeroTres + numFilhosQuatrDezesseis + numFilhosDezesseteDezoito;
+        
         Double valorFilhosZeroTres = 25.12 * numFilhosZeroTres;
         Double valorFilhosQuatroDezesseis = 15.88 * numFilhosQuatrDezesseis;
         Double valorFilhosDezesseteDezoito = 12.44 * numFilhosDezesseteDezoito;
-        
         Double valorBolsa = valorFilhosZeroTres + valorFilhosQuatroDezesseis + valorFilhosDezesseteDezoito;
         
         System.out.println(valorFilhosZeroTres);
         System.out.println(valorFilhosQuatroDezesseis);
         System.out.println(valorFilhosDezesseteDezoito);
-        System.out.println(valorBolsa);
+        
+        
+        System.out.println(String.format("Você tem um total de %d filhos e vai receber R$%.2f de bolsa",totalFilho,valorBolsa));
         
         
     }
